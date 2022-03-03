@@ -1,0 +1,5 @@
+package com.tcs.demo.eexceptions;
+
+public class ResourceNotFound {
+
+}

@@ -1,0 +1,5 @@
+package com.tcs.demo.controllers;
+
+public @interface Pathvaribale {
+
+}
