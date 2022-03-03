@@ -20,4 +20,12 @@ export class EmployeeServiceService {
   createEmployee(employee:Employee):Observable<Object>{
      return this.http.post(`${this.baseUrl}`,employee);
   }
+
+  getEmployeeById(id:number |undefined): Observable<Employee>{
+    return this.http.get<Employee>(`${this.baseUrl}/${id}`)
+  }
+
+  updateEmployeeById(id:number |undefined,employee:Employee) :Observable<Object>{
+      return this.http.put(`${this.baseUrl}/${id}`,employee)
+  }
 }
