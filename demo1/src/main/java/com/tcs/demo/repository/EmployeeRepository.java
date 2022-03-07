@@ -10,4 +10,8 @@ import com.tcs.demo.model.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee,Long> {
 
+	com.tcs.demo.controllers.Employee save(com.tcs.demo.controllers.Employee employee);
+
+	
+
 }

@@ -28,4 +28,9 @@ export class EmployeeServiceService {
   updateEmployeeById(id:number |undefined,employee:Employee) :Observable<Object>{
       return this.http.put(`${this.baseUrl}/${id}`,employee)
   }
+
+
+deleteEmployee(id:number |undefined):any {
+  return this.http.delete(`${this.baseUrl}/${id}`)
+}
 }

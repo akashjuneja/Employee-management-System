@@ -64,4 +64,9 @@ export class EmployeeListComponent implements OnInit {
   updateEmployee(id:number |undefined){
     this.router.navigate(['updateEmployee' ,id])
   }
+  deleteEmployee(id:number |undefined){
+    this.router.navigate(['deleteEmployee' ,id])
+  }
+
+
 }
